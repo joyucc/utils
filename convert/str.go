@@ -1,4 +1,4 @@
-package gstring
+package convert
 
 import (
 	"encoding/json"
