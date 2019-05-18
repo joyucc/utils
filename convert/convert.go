@@ -10,7 +10,7 @@
 
 ------------------------------- go ---------------------------------*/
 
-package util
+package convert
 
 import (
 	"bytes"

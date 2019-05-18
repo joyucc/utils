@@ -8,7 +8,7 @@
 
 ------------------------------- go ---------------------------------*/
 
-package util
+package convert
 
 import (
 	"encoding/json"
@@ -31,7 +31,7 @@ var Struct *structHelper = new(structHelper)
 func (this *structHelper) ToJsonByte(v interface{}) []byte {
 	reply, err := json.Marshal(v)
 	if err != nil {
-		common.Logs.Debug("Struct2Byte(%v) fail, err=%s", v, err.Error())
+		//common.Logs.Debug("Struct2Byte(%v) fail, err=%s", v, err.Error())
 		return nil
 	}
 
@@ -46,7 +46,7 @@ func (this *structHelper) ToJsonByte(v interface{}) []byte {
 func (this *structHelper) ToJsonString(v interface{}) string {
 	reply, err := json.Marshal(v)
 	if err != nil {
-		common.Logs.Debug("Struct2String(%v) fail, err=%s", v, err.Error())
+		//common.Logs.Debug("Struct2String(%v) fail, err=%s", v, err.Error())
 		return ""
 	}
 
